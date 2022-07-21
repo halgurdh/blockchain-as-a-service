@@ -1,0 +1,17 @@
+
+Write data in console
+ContractName.deployed().then(function(temp) {
+      congress = temp;
+      return congress.functionName(params));
+    });
+
+Reed var in console
+ContractName.deployed().then(function(instance) {
+    return instance.balance.call();
+}).then(function(balance) {
+    console.log(balance);
+});
+
+deployed().then(instance => instance.abi)
+
+.deployed().then(function(instance) { return instance.amount.call();}).then(function(amount) { console.log(amount);});

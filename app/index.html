@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BaaS - Truffle</title>
+  <script src="./app.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.2/jspdf.debug.js"></script>
+</head>
+<body oncontextmenu="return false">
+  <h1>Baas</h1>
+<br>
+    <div id="loginDiv">
+        <h2>Login</h2>
+
+        <h3>Address: </h3><input id="address" type="text"/><br><br>
+        <button onclick="App.login()">Login</button><br><br>
+
+        <h2>Register</h2>
+
+        <h3>Address: </h3><input id="address" type="text"/><br><br>
+        Rol: <select id="role">
+          <option value="0">Werknemer</option>
+          <option value="1">Werkgever</option>
+          <option value="2">Instituut</option>
+        </select><br><br>
+        <button onclick="App.register()">Register</button><br><br>
+    </div>
+
+    <div id="logoutDiv">
+        <button onclick="App.logout()">Logout</button><br><br>
+    </div>
+
+    <div id="uploadDocDiv">
+      <h2>Upload Kwalificatie</h2>
+      <input id="file" type="file" /><br><br>
+        <h3>Address: </h3><input id="Uaddress" type="text"/><br><br>
+      <button id="upload" onclick="App.uploadDoc2()">Upload Kwalificatie</button><br><br>
+    </div>
+
+    <div id="delenDocDiv">
+      <h3>From Address: </h3><input id="Faddress" type="text"/><br><br>
+      <h3>To Address: </h3><input id="Taddress" type="text"/><br><br>
+      <h2>Kwalificatie Delen</h2><br><br>
+        <button onclick="App.delenDoc()">Delen</button><br><br>
+      <h2>Kwalificatie Downloaden</h2><br><br>
+      <h3>Download Address: </h3><input id="address" type="text"/><br><br>
+      <button id="show2" onclick="App.getDocs()">Download Kwalificatie</button><br><br>
+
+      
+    </div>
+
+    <div id="showDocDiv">
+      <h3>Download Address: </h3><input id="address" type="text"/><br><br>
+      <h2>Kwalificatie Downloaden</h2><br><br>
+      <button id="show2" onclick="App.getDocs()">Download Kwalificatie</button><br><br>
+    </div>
+
+  <span class="hint"><strong>Hint:</strong> open the browser developer console to view any errors and warnings.</span>
+</body>
+</html>
